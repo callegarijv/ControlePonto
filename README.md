@@ -74,7 +74,7 @@ cd JVSYSTEMS
 │ ├── CadastroFuncionario.cs<br>
 │ ├── RegistroPonto.cs<br>
 │ └── Relatorios.c<br>
-|<br>
+│<br>
 ├── Helpers/<br>
 │ └── HashHelper.cs<br>
 │<br>
