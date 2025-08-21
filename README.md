@@ -62,25 +62,25 @@ cd JVSYSTEMS
 
 
 /JVSYSTEMS
-│
-├── Program.cs
-├── Models/
-│ ├── Usuario.cs
-│ ├── Funcionario.cs
-│ └── BatidaPonto.cs
-│
-├── Controllers/
-│ ├── CadastroUsuario.cs
-│ ├── CadastroFuncionario.cs
-│ ├── RegistroPonto.cs
-│ └── Relatorios.c
-|
-├── Helpers/
-│ └── HashHelper.cs
-│
-├── Validadores/
-│ ├── ValidadorCPF.cs
-│ └── ValidadorNome.cs
-│
-└── README.md
+│<br>
+├── Program.cs<br>
+├── Models/<br>
+│ ├── Usuario.cs<br>
+│ ├── Funcionario.cs<br>
+│ └── BatidaPonto.cs<br>
+│<br>
+├── Controllers/<br>
+│ ├── CadastroUsuario.cs<br>
+│ ├── CadastroFuncionario.cs<br>
+│ ├── RegistroPonto.cs<br>
+│ └── Relatorios.c<br>
+|<br>
+├── Helpers/<br>
+│ └── HashHelper.cs<br>
+│<br>
+├── Validadores/<br>
+│ ├── ValidadorCPF.cs<br>
+│ └── ValidadorNome.cs<br>
+│<br>
+└── README.md<br>
 
