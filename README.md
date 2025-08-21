@@ -56,7 +56,31 @@ git clone https://github.com/callegarijv/JVSYSTEMS.git
 2. Acesse a pasta do projeto:
 cd JVSYSTEMS
 
-3. Restaure e execute:
-dotnet build
+3. Restaure: dotnet build
+  
+4. Execute: dotnet run
 
-dotnet run
+
+/JVSYSTEMS
+│
+├── Program.cs
+├── Models/
+│ ├── Usuario.cs
+│ ├── Funcionario.cs
+│ └── BatidaPonto.cs
+│
+├── Controllers/
+│ ├── CadastroUsuario.cs
+│ ├── CadastroFuncionario.cs
+│ ├── RegistroPonto.cs
+│ └── Relatorios.c
+|
+├── Helpers/
+│ └── HashHelper.cs
+│
+├── Validadores/
+│ ├── ValidadorCPF.cs
+│ └── ValidadorNome.cs
+│
+└── README.md
+
