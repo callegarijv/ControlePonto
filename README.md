@@ -37,7 +37,6 @@ O sistema tem como objetivo fornecer uma base sólida e funcional para controle 
 - **Controllers/** — lógica de cadastro, registro de ponto e relatórios
 - **Validadores/** — validações de entrada (nome, CPF, etc.)
 - **Helpers/** — funções auxiliares (como criptografia de senha)
-- **Data/** — contexto do banco de dados com EF Core
 
 ---
 
