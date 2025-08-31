@@ -37,29 +37,7 @@ O sistema tem como objetivo fornecer uma base sólida e funcional para controle 
 - **Controllers/** — lógica de cadastro, registro de ponto e relatórios
 - **Validadores/** — validações de entrada (nome, CPF, etc.)
 - **Helpers/** — funções auxiliares (como criptografia de senha)
-
----
-
-## Como executar o projeto
-
-### Pré-requisitos
-
-- .NET SDK 6.0 ou superior instalado
-- Git (para clonar o repositório)
-
-### Passos
-
-1. Clone este repositório:
-git clone https://github.com/callegarijv/JVSYSTEMS.git
-
-2. Acesse a pasta do projeto:
-cd JVSYSTEMS
-
-3. Restaure: dotnet build
   
-4. Execute: dotnet run
-
-
 /JVSYSTEMS<br>
 │<br>
 ├── Program.cs<br>
@@ -83,3 +61,23 @@ cd JVSYSTEMS
 │<br>
 └── README.md<br>
 
+---
+
+## Como executar o projeto
+
+### Pré-requisitos
+
+- .NET SDK 6.0 ou superior instalado
+- Git (para clonar o repositório)
+
+### Passos
+
+1. Clone este repositório:
+git clone https://github.com/callegarijv/JVSYSTEMS.git
+
+2. Acesse a pasta do projeto:
+cd JVSYSTEMS
+
+3. Restaure: dotnet build
+  
+4. Execute: dotnet run
