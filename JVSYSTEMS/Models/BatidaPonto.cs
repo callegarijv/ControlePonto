@@ -1,19 +1,16 @@
-﻿using System;
-
-namespace SistemaPonto.Models
+﻿public class BatidaPonto
 {
-    public class BatidaPonto
-    {
-        public int Id { get; set; }
-        public int FuncionarioId { get; set; }
-        public DateTime DataHora { get; set; }
-        public string? Tipo { get; set; } // Entrada, Saída, Intervalo
+    public int Id { get; set; }
+    public int FuncionarioId { get; set; }
+    public DateTime DataHora { get; set; }
+    public string? Tipo { get; set; }
 
-        public BatidaPonto(int funcionarioId, string tipo)
-        {
-            FuncionarioId = funcionarioId;
-            Tipo = tipo;
-            DataHora = DateTime.Now;
-        }
+    public BatidaPonto() { }
+
+    public BatidaPonto(int funcionarioId, string tipo)
+    {
+        FuncionarioId = funcionarioId;
+        Tipo = tipo;
+        DataHora = DateTime.Now;
     }
 }

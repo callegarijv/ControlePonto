@@ -23,7 +23,7 @@ namespace SistemaPonto.Controllers
             }
 
             var func = CadastroFuncionario.funcionarios
-                .FirstOrDefault(f => f.IdFuncionario == idFuncionario);
+                .FirstOrDefault(f => f.Id == idFuncionario);
 
             if (func == null)
             {
@@ -32,7 +32,7 @@ namespace SistemaPonto.Controllers
             }
 
             var batidas = RegistroPonto.Batidas
-                .Where(b => b.FuncionarioId == func.IdFuncionario)
+                .Where(b => b.FuncionarioId == func.Id)
                 .OrderBy(b => b.DataHora)
                 .ToList();
 
@@ -42,7 +42,7 @@ namespace SistemaPonto.Controllers
                 return;
             }
 
-            Console.WriteLine($"\nRelatório de {func.NomeFuncionario} (ID {func.IdFuncionario})");
+            Console.WriteLine($"\nRelatório de {func.NomeFuncionario} (ID {func.Id})");
             Console.WriteLine(new string('-', 45));
 
             void ImprimirSecao(string titulo, List<BatidaPonto> lista)

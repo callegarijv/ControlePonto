@@ -1,31 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\VISUAL STUDIO\\JVSYSTEMS\\JVSYSTEMS\\JVSYSTEMS.csproj": {}
+    "/Users/callegarijv/Documents/GitHub/JVSYSTEMS/JVSYSTEMS/JVSYSTEMS.csproj": {}
   },
   "projects": {
-    "C:\\VISUAL STUDIO\\JVSYSTEMS\\JVSYSTEMS\\JVSYSTEMS.csproj": {
+    "/Users/callegarijv/Documents/GitHub/JVSYSTEMS/JVSYSTEMS/JVSYSTEMS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\VISUAL STUDIO\\JVSYSTEMS\\JVSYSTEMS\\JVSYSTEMS.csproj",
+        "projectUniqueName": "/Users/callegarijv/Documents/GitHub/JVSYSTEMS/JVSYSTEMS/JVSYSTEMS.csproj",
         "projectName": "JVSYSTEMS",
-        "projectPath": "C:\\VISUAL STUDIO\\JVSYSTEMS\\JVSYSTEMS\\JVSYSTEMS.csproj",
-        "packagesPath": "C:\\Users\\VALDIR\\.nuget\\packages\\",
-        "outputPath": "C:\\VISUAL STUDIO\\JVSYSTEMS\\JVSYSTEMS\\obj\\",
+        "projectPath": "/Users/callegarijv/Documents/GitHub/JVSYSTEMS/JVSYSTEMS/JVSYSTEMS.csproj",
+        "packagesPath": "/Users/callegarijv/.nuget/packages/",
+        "outputPath": "/Users/callegarijv/Documents/GitHub/JVSYSTEMS/JVSYSTEMS/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\VALDIR\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/callegarijv/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "/usr/local/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -49,6 +44,22 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[9.0.8, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -65,7 +76,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

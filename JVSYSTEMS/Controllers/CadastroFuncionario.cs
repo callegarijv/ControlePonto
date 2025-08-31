@@ -45,7 +45,7 @@ namespace SistemaPonto.Controllers
 
             funcionarios.Add(novoFuncionario);
 
-            Console.WriteLine($"Funcionário cadastrado com sucesso! ID gerado: {novoFuncionario.IdFuncionario}");
+            Console.WriteLine($"Funcionário cadastrado com sucesso! ID gerado: {novoFuncionario.Id}");
         }
 
         public static void Listar()
@@ -61,7 +61,7 @@ namespace SistemaPonto.Controllers
 
             foreach (var funcionario in funcionarios)
             {
-                Console.WriteLine($"ID: {funcionario.IdFuncionario}, Nome: {funcionario.NomeFuncionario}, CPF: {funcionario.CpfFuncionario}");
+                Console.WriteLine($"ID: {funcionario.Id}, Nome: {funcionario.NomeFuncionario}, CPF: {funcionario.CpfFuncionario}");
             }
         }
     }

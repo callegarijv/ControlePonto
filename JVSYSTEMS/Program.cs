@@ -1,7 +1,7 @@
 ﻿using System;
 using SistemaPonto.Controllers;
 
-namespace JVSYSTEMS
+namespace SistemaPonto
 {
     class Program
     {

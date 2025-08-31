@@ -25,7 +25,7 @@ namespace SistemaPonto.Controllers
             }
 
             var func = CadastroFuncionario.funcionarios
-                .FirstOrDefault(f => f.IdFuncionario == idFuncionario);
+                .FirstOrDefault(f => f.Id == idFuncionario);
 
             if (func == null)
             {
@@ -51,7 +51,7 @@ namespace SistemaPonto.Controllers
                 return;
             }
 
-            var batida = new BatidaPonto(func.IdFuncionario, tipo);
+            var batida = new BatidaPonto(func.Id, tipo);
             Batidas.Add(batida);
 
             Console.WriteLine($"Batida registrada: {tipo} às {batida.DataHora:dd/MM/yyyy HH:mm:ss.fff} para {func.NomeFuncionario}");
