@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("JVSYSTEMS")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3c7e7c6acc1841f753682c04bb59a1a2558c39eb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6e1b30b29fb7b8ba27f4084c488206df1d62bcce")]
 [assembly: System.Reflection.AssemblyProductAttribute("JVSYSTEMS")]
 [assembly: System.Reflection.AssemblyTitleAttribute("JVSYSTEMS")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
