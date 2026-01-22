@@ -1,83 +1,89 @@
-# Sistema de Ponto Eletrônico - JVSYSTEMS
+# Sistema de Ponto Eletronico - ControlePonto
+![CI](https://github.com/callegarijv/ControlePonto/actions/workflows/ci.yml/badge.svg)
 
-Este é um sistema de ponto eletrônico desenvolvido em C# com Entity Framework Core.  
-O projeto foi criado para registrar horários de entrada, saída e intervalos dos funcionários, com funcionalidades de cadastro, validação de dados e geração de relatórios.
-
----
+Sistema de ponto eletronico em C# com Entity Framework Core, focado em cadastro,
+validacao de dados e relatorios de batidas.
 
 ## Objetivo
 
-O sistema tem como objetivo fornecer uma base sólida e funcional para controle de ponto de funcionários, com estrutura organizada e pronta para futuras expansões web e mobile.
-
----
+Fornecer uma base solida e funcional para controle de ponto de funcionarios,
+com estrutura organizada para evolucoes futuras (web e mobile).
 
 ## Funcionalidades
 
-- Cadastro de usuários com senha criptografada (SHA256)
-- Cadastro de funcionários com validação de nome e CPF
+- Cadastro de usuarios com senha criptografada (SHA256)
+- Cadastro de funcionarios com validacao de nome e CPF
 - Registro de batidas de ponto com data e hora
-- Geração de relatórios de ponto por funcionário
-- Estrutura separada em camadas: Models, Controllers, Validadores e Helpers
-
----
+- Geracao de relatorios de ponto por funcionario
+- Separacao por camadas: Models, Controllers, Validadores e Helpers
 
 ## Tecnologias utilizadas
 
-- C# (.NET 6 ou superior)
-- Entity Framework Core
-- SQL Server (banco de dados)
-- Console Application (modo texto)
-
----
+- C# (.NET 9)
+- Entity Framework Core 9
+- SQLite (padrao)
+- SQL Server (opcional para evolucao futura)
+- Console Application
 
 ## Estrutura do projeto
 
-- **Program.cs** — ponto de entrada da aplicação
-- **Models/** — classes que representam as entidades (Usuário, Funcionário, Batida de ponto)
-- **Controllers/** — lógica de cadastro, registro de ponto e relatórios
-- **Validadores/** — validações de entrada (nome, CPF, etc.)
-- **Helpers/** — funções auxiliares (como criptografia de senha)
-  
-/JVSYSTEMS<br>
-│<br>
-├── Program.cs<br>
-├── Models/<br>
-│ ├── Usuario.cs<br>
-│ ├── Funcionario.cs<br>
-│ └── BatidaPonto.cs<br>
-│<br>
-├── Controllers/<br>
-│ ├── CadastroUsuario.cs<br>
-│ ├── CadastroFuncionario.cs<br>
-│ ├── RegistroPonto.cs<br>
-│ └── Relatorios.c<br>
-│<br>
-├── Helpers/<br>
-│ └── HashHelper.cs<br>
-│<br>
-├── Validadores/<br>
-│ ├── ValidadorCPF.cs<br>
-│ └── ValidadorNome.cs<br>
-│<br>
-└── README.md<br>
+```
+ControlePonto/
+├── src/ControlePonto/Program.cs
+├── src/ControlePonto/Models/
+│   ├── Usuario.cs
+│   ├── Funcionario.cs
+│   └── BatidaPonto.cs
+├── src/ControlePonto/Controllers/
+│   ├── CadastroUsuario.cs
+│   ├── CadastroFuncionario.cs
+│   ├── RegistroPonto.cs
+│   └── Relatorios.cs
+├── src/ControlePonto/Helpers/
+│   └── HashHelper.cs
+├── src/ControlePonto/Validadores/
+│   ├── ValidadorCPF.cs
+│   └── ValidadorNome.cs
+├── src/ControlePonto/Migrations/
+├── tests/ControlePonto.Tests/
+└── README.md
+```
 
----
+## Banco de dados
+
+- As migrations ficam em `src/ControlePonto/Migrations`.
+- O arquivo `controleponto.db` eh criado localmente e fica ignorado no Git.
+
+Para criar ou atualizar o banco:
+
+```
+dotnet tool install --global dotnet-ef
+dotnet ef database update --project src/ControlePonto/ControlePonto.csproj
+```
 
 ## Como executar o projeto
 
-### Pré-requisitos
+```
+git clone https://github.com/callegarijv/ControlePonto.git
+cd ControlePonto
+dotnet restore
+dotnet run --project src/ControlePonto/ControlePonto.csproj
+```
 
-- .NET SDK 6.0 ou superior instalado
-- Git (para clonar o repositório)
+## Testes
 
-### Passos
+```
+dotnet test
+```
 
-1. Clone este repositório:
-git clone https://github.com/callegarijv/JVSYSTEMS.git
+## CI
 
-2. Acesse a pasta do projeto:
-cd JVSYSTEMS
+O workflow de CI valida build e testes a cada push/PR. O status aparece no badge
+do topo do README.
 
-3. Restaure: dotnet build
-  
-4. Execute: dotnet run
+## Em estudo / proximos passos
+
+- Melhorar regras de negocio e relatorios
+- Criar API REST para consumo web/mobile
+- Adicionar autenticacao e permissao
+- Evoluir cobertura de testes e automatizacoes
